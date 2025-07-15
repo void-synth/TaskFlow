@@ -126,4 +126,62 @@
     color: #64748b;
 }
 
-/* Status styles are inherited from main.css */ 
+/* Status styles are inherited from main.css */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .reports-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .download-report {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .key-metrics {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .distribution-chart {
+        padding: 1rem;
+        height: 200px;
+        gap: 1rem;
+    }
+
+    .bar-label {
+        font-size: 0.75rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        margin-top: 0.5rem;
+    }
+
+    .recent-tasks {
+        margin: 0 -1rem;
+    }
+
+    .recent-tasks table {
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .metric-card {
+        padding: 1rem;
+    }
+
+    .metric-card .value {
+        font-size: 1.5rem;
+    }
+
+    .chart-container {
+        padding: 1rem;
+    }
+
+    .chart-value {
+        font-size: 1.5rem;
+    }
+} 

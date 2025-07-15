@@ -112,3 +112,50 @@ select:focus {
 .settings-actions button.secondary:hover {
     background-color: var(--background-color);
 } 
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .settings-section {
+        padding: 1rem;
+        margin: 0 -1rem 1rem -1rem;
+        border-radius: 0;
+    }
+
+    .setting-group {
+        gap: 1.5rem;
+    }
+
+    select {
+        max-width: 100%;
+    }
+
+    .settings-actions {
+        flex-direction: column;
+        margin: 1rem -1rem -1rem -1rem;
+        padding: 1rem;
+        background-color: white;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .settings-actions button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .setting-item {
+        gap: 0.25rem;
+    }
+
+    .setting-item .description {
+        font-size: 0.75rem;
+    }
+
+    .checkbox-group {
+        gap: 0.5rem;
+    }
+
+    .checkbox {
+        font-size: 0.875rem;
+    }
+} 
