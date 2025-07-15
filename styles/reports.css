@@ -1,0 +1,129 @@
+.reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.download-report {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.download-report:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Key Metrics Section */
+.key-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+}
+
+.metric-card h3 {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card .value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.trend {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.trend.neutral {
+    color: #64748b;
+}
+
+/* Completion Trend Section */
+.completion-trend {
+    margin-bottom: 2rem;
+}
+
+/* Task Distribution Section */
+.task-distribution {
+    margin-bottom: 2rem;
+}
+
+.distribution-chart {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bar-value {
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: height 0.3s ease;
+}
+
+.bar-label {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+/* Recent Tasks Section */
+.recent-tasks {
+    margin-bottom: 2rem;
+}
+
+.recent-tasks table {
+    width: 100%;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.recent-tasks th,
+.recent-tasks td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.recent-tasks th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #64748b;
+}
+
+/* Status styles are inherited from main.css */ 
